@@ -10,3 +10,6 @@ import Foundation
 
 print("Hello, World!")
 
+let rel =  Rational(num: 2, denom: 3)
+
+
