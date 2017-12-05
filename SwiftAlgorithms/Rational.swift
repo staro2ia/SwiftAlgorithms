@@ -152,6 +152,14 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
     
 }
 
+extension Rational : CustomStringConvertible {
+    var description: String {
+        return "\(num) / \(denom)"
+    }
+}
+
+
+
 /// Наибольший общий делитель
 ///
 /// - Parameters:
