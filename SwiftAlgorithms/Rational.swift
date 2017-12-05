@@ -10,17 +10,18 @@ import Foundation
 
 
 /// Рациональная дробь
-struct Rational<N: SignedInteger, D: UnsignedInteger>: Numeric, Equatable {
-    var magnitude: N
+struct Rational<N: SignedInteger, D: UnsignedInteger> {
+//    var magnitude: N
     
-    typealias Magnitude = N
-    typealias IntegerLiteralType = N
+//    typealias Magnitude = N
+//    typealias IntegerLiteralType = N
     
     
     ///MARCK: Data section
     
-    
+    /// Числитель дроби
     private var num: N
+    /// Знаменатель дроби
     private var denom: D
     
     ///MARCK: Init section
@@ -32,8 +33,8 @@ struct Rational<N: SignedInteger, D: UnsignedInteger>: Numeric, Equatable {
     
     init(num n: N, denom d: D ) /*throws*/ {
         let r = simplify(a: n, b: d)
-        num = n
-        denom = d
+        num = r.0
+        denom = r.1
         
 //        if d <= 0 {
 ////            throw 1
@@ -42,13 +43,19 @@ struct Rational<N: SignedInteger, D: UnsignedInteger>: Numeric, Equatable {
 
     }
     
-    init?<T>(exactly source: T) where T : BinaryInteger {
-        num = Int(source)
-        denom = 1
+    init?<T>(exactly source: T) where T : UnsignedInteger {
+        num = 1
+        denom = D(source)
     }
     
     
     
+    /// Изменяет экземпляр Rational и возвращает его копию.
+    ///
+    /// - Parameters:
+    ///   - n: новый числитель
+    ///   - d: новый знаменатель
+    /// - Returns: возвращает экземпляр Rational
     mutating func assign(num n: N, denom d: D) -> Rational {
         let r = simplify(a: n, b: d)
         num = r.0
@@ -63,46 +70,79 @@ struct Rational<N: SignedInteger, D: UnsignedInteger>: Numeric, Equatable {
         return self
     }
     
-    ///MARCK: Operation section
+    ///MARCK: Arithmetic operation section
     
     static func + (left:  Rational, right: Rational ) -> Rational {
         let n = left.num * N(right.denom) + right.num * N(left.denom)
         let d = left.denom * right.denom
         let r =  Rational(num: n, denom: d)
-        
         return r
     }
     
-    static func += (left:  inout Rational, right: Rational ) -> Rational {
+    static func += (left:  inout Rational, right: Rational ) {
         left =  left + right
-        return left
+    }
+    
+    static func - (left:  Rational, right: Rational ) -> Rational {
+        let n = left.num * N(right.denom) - right.num * N(left.denom)
+        let d = left.denom * right.denom
+        let r =  Rational(num: n, denom: d)
+        return r
+    }
+    
+    static func -= (left:  inout Rational, right: Rational ) {
+        left =  left - right
     }
     
     static func *(lhs: Rational<N, D>, rhs: Rational<N, D>) -> Rational<N, D> {
-        <#code#>
+        let n = lhs.num * rhs.num
+        let d = lhs.denom * rhs.denom
+        return Rational(num: n, denom: d)
     }
     
     static func *=(lhs: inout Rational<N, D>, rhs: Rational<N, D>) {
-        <#code#>
+        lhs = lhs * rhs
     }
     
+    static func /(lhs: Rational<N, D>, rhs: Rational<N, D>) -> Rational<N, D> {
+        let n = lhs.num * N(rhs.denom)
+        let d = lhs.denom * D(rhs.num)
+        return Rational(num: n, denom: d)
+    }
+    
+    static func /=(lhs: inout Rational<N, D>, rhs: Rational<N, D>) {
+        lhs = lhs / rhs
+    }
+    
+    ///MARCK: Сomparison operation section
     
     static func < (left: Rational, right: Rational) -> Bool {
         let cd = gcd( left.denom, right.denom )
-        return left.num * N(right.denom) / cd < right.num * N(left.denom) / cd
+        return left.num * N(right.denom / cd ) < right.num * N(left.denom / cd)
     }
     
     static func ==(lhs: Rational, rhs: Rational) -> Bool {
         let cd = gcd( lhs.denom, rhs.denom )
-        return lhs.num * N(rhs.denom) / cd == rhs.num * N(lhs.denom) / cd
+        return lhs.num * N(rhs.denom / cd) == rhs.num * N(lhs.denom / cd)
+    }
+    
+    static func !=(lhs: Rational, rhs: Rational) -> Bool {
+        let cd = gcd( lhs.denom, rhs.denom )
+        return lhs.num * N(rhs.denom / cd) != rhs.num * N(lhs.denom / cd)
     }
     
     
-    ///MARCK: Special section
-    
+    ///MARCK: Special
 
+    
 }
 
+/// Наибольший общий делитель
+///
+/// - Parameters:
+///   - n1: первое число
+///   - n2: второе число
+/// - Returns: наибольший общий делитель
 fileprivate func gcd<T: Numeric & Comparable>(_ n1: T, _ n2: T) -> T {
     var a = n1, b = n2
     if a == 1 {
@@ -126,7 +166,7 @@ fileprivate func gcd<T: Numeric & Comparable>(_ n1: T, _ n2: T) -> T {
 ///   - a: первое число
 ///   - b: второе число
 /// - Returns: пара сокращенных чисел
-fileprivate func simplify<T: BinaryInteger & Comparable>(a: T, b: T) -> (T, T) {
-    let commonDivisor = gcd(abs(a), b )
-    return (a / commonDivisor , b / commonDivisor)
+fileprivate func simplify<S: SignedInteger, U: UnsignedInteger>(a: S, b: U) -> (S, U) {
+    let commonDivisor = gcd(U(abs(a)), b )
+    return (a / S(commonDivisor) , b / commonDivisor)
 }
