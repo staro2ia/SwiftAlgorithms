@@ -94,23 +94,23 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
         left =  left - right
     }
     
-    static func *(lhs: Rational<N, D>, rhs: Rational<N, D>) -> Rational<N, D> {
+    static func * (lhs: Rational<N, D>, rhs: Rational<N, D>) -> Rational<N, D> {
         let n = lhs.num * rhs.num
         let d = lhs.denom * rhs.denom
         return Rational(num: n, denom: d)
     }
     
-    static func *=(lhs: inout Rational<N, D>, rhs: Rational<N, D>) {
+    static func *= (lhs: inout Rational<N, D>, rhs: Rational<N, D>) {
         lhs = lhs * rhs
     }
     
-    static func /(lhs: Rational<N, D>, rhs: Rational<N, D>) -> Rational<N, D> {
+    static func / (lhs: Rational<N, D>, rhs: Rational<N, D>) -> Rational<N, D> {
         let n = lhs.num * N(rhs.denom)
         let d = lhs.denom * D(rhs.num)
         return Rational(num: n, denom: d)
     }
     
-    static func /=(lhs: inout Rational<N, D>, rhs: Rational<N, D>) {
+    static func /= (lhs: inout Rational<N, D>, rhs: Rational<N, D>) {
         lhs = lhs / rhs
     }
     
@@ -119,6 +119,21 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
     static func < (left: Rational, right: Rational) -> Bool {
         let cd = gcd( left.denom, right.denom )
         return left.num * N(right.denom / cd ) < right.num * N(left.denom / cd)
+    }
+    
+    static func > (left: Rational, right: Rational) -> Bool {
+        let cd = gcd( left.denom, right.denom )
+        return left.num * N(right.denom / cd ) > right.num * N(left.denom / cd)
+    }
+    
+    static func <= (left: Rational, right: Rational) -> Bool {
+        let cd = gcd( left.denom, right.denom )
+        return left.num * N(right.denom / cd ) <= right.num * N(left.denom / cd)
+    }
+    
+    static func >= (left: Rational, right: Rational) -> Bool {
+        let cd = gcd( left.denom, right.denom )
+        return left.num * N(right.denom / cd ) >= right.num * N(left.denom / cd)
     }
     
     static func ==(lhs: Rational, rhs: Rational) -> Bool {
