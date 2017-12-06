@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		227497081F80FC9A005F2DC9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227497071F80FC9A005F2DC9 /* main.swift */; };
 		2274970F1F81011E005F2DC9 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274970E1F81011E005F2DC9 /* Rational.swift */; };
+		22E595501FD80279007E1783 /* FSM_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E5954F1FD80279007E1783 /* FSM_Model.swift */; };
+		22E595531FD80529007E1783 /* litera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E595521FD80529007E1783 /* litera.swift */; };
+		22E595551FD8069E007E1783 /* lexema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E595541FD8069E007E1783 /* lexema.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +30,9 @@
 		227497041F80FC9A005F2DC9 /* SwiftAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		227497071F80FC9A005F2DC9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2274970E1F81011E005F2DC9 /* Rational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
+		22E5954F1FD80279007E1783 /* FSM_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSM_Model.swift; sourceTree = "<group>"; };
+		22E595521FD80529007E1783 /* litera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = litera.swift; sourceTree = "<group>"; };
+		22E595541FD8069E007E1783 /* lexema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lexema.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,20 @@
 			children = (
 				227497071F80FC9A005F2DC9 /* main.swift */,
 				2274970E1F81011E005F2DC9 /* Rational.swift */,
+				22E595511FD80286007E1783 /* Конечный автомат */,
 			);
 			path = SwiftAlgorithms;
+			sourceTree = "<group>";
+		};
+		22E595511FD80286007E1783 /* Конечный автомат */ = {
+			isa = PBXGroup;
+			children = (
+				22E5954F1FD80279007E1783 /* FSM_Model.swift */,
+				22E595521FD80529007E1783 /* litera.swift */,
+				22E595541FD8069E007E1783 /* lexema.swift */,
+			);
+			name = "Конечный автомат";
+			path = "Конечный автомат";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E595531FD80529007E1783 /* litera.swift in Sources */,
+				22E595551FD8069E007E1783 /* lexema.swift in Sources */,
+				22E595501FD80279007E1783 /* FSM_Model.swift in Sources */,
 				227497081F80FC9A005F2DC9 /* main.swift in Sources */,
 				2274970F1F81011E005F2DC9 /* Rational.swift in Sources */,
 			);
