@@ -31,6 +31,11 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
         denom = 1
     }
     
+    /// Создание рациаональной дроби
+    ///
+    /// - Parameters:
+    ///   - n: числитель
+    ///   - d: знаменатель
     init(num n: N, denom d: D ) /*throws*/ {
         let r = simplify(a: n, b: d)
         num = r.0
@@ -152,7 +157,9 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
     
 }
 
+// MARK: - CustomStringConvertible
 extension Rational : CustomStringConvertible {
+    /// Текстовое представление Rational
     var description: String {
         return "\(num) / \(denom)"
     }
