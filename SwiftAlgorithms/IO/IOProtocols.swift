@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+/// Протокол ввода
+protocol InputProtocol {
+    func getChar() -> Character
+}
+
+
+/// Протокол вывода
+protocol OutputProtocol {
+    func putChar(char: Character)
+}
+
