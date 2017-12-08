@@ -9,10 +9,11 @@
 import Foundation
 
 
+/// Строковый поток ввода.
 struct InputString: InputProtocol {
     
-    var data: String
-    var i: String.Iterator
+    private var data: String
+    private var i: String.Iterator
     
     init(string: String) {
         data = string

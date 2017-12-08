@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+/// Строковый поток вывода
+struct OutputString: OutputProtocol {
+    /// строка вывода потока.
+    /// Хранит весь вывод, сделаный в поток.
+    var data = String()
+    
+    
+    
+    mutating func putChar(char: Character) {
+        data.append(char)
+    }
+
+    
+    
+}
