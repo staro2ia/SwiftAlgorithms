@@ -10,12 +10,18 @@ import Foundation
 
 /// Протокол ввода
 protocol InputProtocol {
-    func getChar() -> Character
+    /// Функция ввода символа
+    ///
+    /// - Returns: очередной символ из потока
+    mutating func getChar() -> Character?
 }
 
 
 /// Протокол вывода
 protocol OutputProtocol {
-    func putChar(char: Character)
+    /// Функция вывода символа в поток
+    ///
+    /// - Parameter char: символ, который выводится в поток
+    mutating func putChar(char: Character)
 }
 

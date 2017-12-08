@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+
+struct InputString: InputProtocol {
+    
+    var data: String
+    var i: String.Iterator
+    
+    init(string: String) {
+        data = string
+        i = data.makeIterator()
+    }
+    
+    mutating func getChar() -> Character? {
+        return i.next()
+    }
+}
