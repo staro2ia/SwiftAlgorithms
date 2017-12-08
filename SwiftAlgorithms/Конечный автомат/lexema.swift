@@ -11,5 +11,18 @@ import Foundation
 
 /// Лексема языка
 struct Lexema {
-    <#fields#>
+    var value = [Character]()
+    
+    mutating func first(litera: Litera) {
+        value.append(litera.char)
+    }
+    
+    mutating func next(litera: Litera) {
+        value.append(litera.char)
+    }
+    
+    func print() {
+        Swift.print("\(value)")
+    }
+    
 }
