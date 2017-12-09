@@ -9,7 +9,7 @@
 import Foundation
 
 /// Конечный автомат
-struct FSM_Model {
+class FSM_Model {
     ///MARK: Types
     
     /// Состояния автомата.
@@ -29,28 +29,63 @@ struct FSM_Model {
     
     /// Состояние автомата
     var state = StateType.S0
-    
-    
+    var input = InputString(string: "Fjhdj d hjskdf jfhs78sf7 7sd7fs6 6777 yfysdugfu")
+    var output = OutputString()
+    var lexema = Lexema()
+
     ///MARK: Methods
     
     func start() {
-        <#function body#>
+        while true {
+            let lit = getInputType(char: input.getChar())
+            switch state {
+            case .S0:
+                processS0(litera: lit, lexem: lex)
+            case .nextLiter:
+                processNextLiter(litera: lit)
+            case .error:
+                processError()
+            case .stop:
+                processStop()
+            }
+        }
     }
     
-    func processS0(litera: Litera, lexem: Lexema) {
-        <#function body#>
+    func processS0(litera: Litera) {
+        switch litera {
+        case .space:
+            state = .S0
+        case .letter(_):
+            state = .nextLiter
+            lexema.first(litera: litera)
+        case .EOF:
+            state = .stop
+        default:
+            state = .error
+        }
     }
     
-    func processNextLiter(litera: Litera, lexem: Lexema) {
-        <#function body#>
+    func processNextLiter(litera: Litera) {
+        switch litera {
+        case .space:
+            state = .S0
+        case .letter(_), .digit(_):
+            state = .nextLiter
+            lexema.next(litera: litera)
+        case .EOF:
+            state = .stop
+            lexema.print()
+        default:
+            state = .error
+        }
     }
     
     func processStop() {
-        <#function body#>
+        print("Stopped successfully")
     }
     
     func processError() {
-        <#function body#>
+        print("Stopped in error state")
     }
     
 }
