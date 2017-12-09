@@ -13,7 +13,7 @@ protocol InputProtocol {
     /// Функция ввода символа
     ///
     /// - Returns: очередной символ из потока
-    mutating func getChar() -> Character?
+    func getChar() -> Character?
 }
 
 
@@ -22,6 +22,6 @@ protocol OutputProtocol {
     /// Функция вывода символа в поток
     ///
     /// - Parameter char: символ, который выводится в поток
-    mutating func putChar(char: Character)
+    func putChar(char: Character)
 }
 

@@ -9,14 +9,14 @@
 import Foundation
 
 /// Строковый поток вывода
-struct OutputString: OutputProtocol {
+class OutputString: OutputProtocol {
     /// строка вывода потока.
     /// Хранит весь вывод, сделаный в поток.
     var data = String()
     
     
     
-    mutating func putChar(char: Character) {
+    func putChar(char: Character) {
         data.append(char)
     }
 

@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Строковый поток ввода.
-struct InputString: InputProtocol {
+class InputString: InputProtocol {
     
     private var data: String
     private var i: String.Iterator
@@ -20,7 +20,7 @@ struct InputString: InputProtocol {
         i = data.makeIterator()
     }
     
-    mutating func getChar() -> Character? {
+    func getChar() -> Character? {
         return i.next()
     }
 }
