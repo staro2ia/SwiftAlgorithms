@@ -29,9 +29,14 @@ class FSM_Model {
     
     /// Состояние автомата
     var state = StateType.S0
-    var input = InputString(string: "Fjhdj d hjskdf jfhs78sf7 7sd7fs6 6777 yfysdugfu")
-    var output = OutputString()
+    var input: InputProtocol
+    var output: OutputProtocol
     var lexema = Lexema()
+    
+    init(input inp: InputProtocol, output outp: OutputProtocol) {
+        input = inp
+        output = outp
+    }
 
     ///MARK: Methods
     
