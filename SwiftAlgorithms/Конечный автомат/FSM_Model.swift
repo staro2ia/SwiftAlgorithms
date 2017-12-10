@@ -40,7 +40,7 @@ class FSM_Model {
             let lit = getInputType(char: input.getChar())
             switch state {
             case .S0:
-                processS0(litera: lit, lexem: lex)
+                processS0(litera: lit)
             case .nextLiter:
                 processNextLiter(litera: lit)
             case .error:

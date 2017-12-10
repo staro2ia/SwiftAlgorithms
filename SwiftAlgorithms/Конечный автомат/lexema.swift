@@ -14,11 +14,21 @@ struct Lexema {
     var value = [Character]()
     
     mutating func first(litera: Litera) {
-        value.append(litera.char)
+        switch litera {
+        case .digit(let char), .letter(let char):
+            value.append(char)
+        default:
+            return
+        }
     }
     
     mutating func next(litera: Litera) {
-        value.append(litera.char)
+        switch litera {
+        case .digit(let char), .letter(let char):
+            value.append(char)
+        default:
+            return
+        }
     }
     
     func print() {
