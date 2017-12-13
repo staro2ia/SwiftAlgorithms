@@ -4,6 +4,6 @@
 
 import XCTest
 
-XCTMain([testCase(SATest.allTests)
+XCTMain([testCase(XCTest.allTests)
 
         ])
