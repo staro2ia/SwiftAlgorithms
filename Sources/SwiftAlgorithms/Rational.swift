@@ -157,7 +157,7 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
     
 }
 
-// MARK: - CustomStringConvertible
+/// MARK: - CustomStringConvertible
 extension Rational : CustomStringConvertible {
     /// Текстовое представление Rational
     var description: String {

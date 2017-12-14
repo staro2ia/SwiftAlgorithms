@@ -50,8 +50,10 @@ class FSM_Model {
                 processNextLiter(litera: lit)
             case .error:
                 processError()
+                return
             case .stop:
                 processStop()
+                return
             }
         }
     }
