@@ -8,7 +8,9 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
-extension CardTests {
+// import XCTest
+
+extension SATest {
 
     static var allTests = [
         ("testExample", testExample)

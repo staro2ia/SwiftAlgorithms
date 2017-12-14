@@ -1,9 +1,9 @@
 
 
-@testable import SwiftAlgorithms
+@testable import SwiftAlgorithmsTests
 
 import XCTest
 
-XCTMain([testCase(XCTest.allTests)
+XCTMain([testCase(SATest.allTests)
 
         ])
