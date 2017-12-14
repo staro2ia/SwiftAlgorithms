@@ -21,8 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		22CEECC31FE289560081359E /* SATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEECC01FE289560081359E /* SATests.swift */; };
+		22CEECC41FE289560081359E /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEECC11FE289560081359E /* XCTestManifests.swift */; };
+		22CEECC51FE289560081359E /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEECC21FE289560081359E /* LinuxMain.swift */; };
+		22CEECC61FE289790081359E /* SATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEECC01FE289560081359E /* SATests.swift */; };
+		22CEECC71FE2897E0081359E /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Rational.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_36 /* SATest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* SATest.swift */; };
 		OBJ_44 /* IOProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IOProtocols.swift */; };
 		OBJ_45 /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* InputStream.swift */; };
 		OBJ_46 /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* OutputStream.swift */; };
@@ -51,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22CEECC01FE289560081359E /* SATests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATests.swift; sourceTree = "<group>"; };
+		22CEECC11FE289560081359E /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		22CEECC21FE289560081359E /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinuxMain.swift; path = Tests/LinuxMain.swift; sourceTree = "<group>"; };
 		OBJ_10 /* IOProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOProtocols.swift; sourceTree = "<group>"; };
 		OBJ_11 /* InputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStream.swift; sourceTree = "<group>"; };
 		OBJ_12 /* OutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
@@ -59,7 +66,6 @@
 		OBJ_16 /* FSM_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSM_Model.swift; sourceTree = "<group>"; };
 		OBJ_17 /* lexema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lexema.swift; sourceTree = "<group>"; };
 		OBJ_18 /* litera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = litera.swift; sourceTree = "<group>"; };
-		OBJ_21 /* SATest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATest.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"SwiftAlgorithms::SwiftAlgorithms::Product" /* SwiftAlgorithms */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftAlgorithms::SwiftAlgorithmsTests::Product" /* SwiftAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22CEECBF1FE289560081359E /* SwiftAlgorithmsTests */ = {
+			isa = PBXGroup;
+			children = (
+				22CEECC01FE289560081359E /* SATests.swift */,
+				22CEECC11FE289560081359E /* XCTestManifests.swift */,
+			);
+			name = SwiftAlgorithmsTests;
+			path = Tests/SwiftAlgorithmsTests;
+			sourceTree = "<group>";
+		};
 		OBJ_15 /* Конечный автомат */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,18 +112,10 @@
 		OBJ_19 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* SwiftAlgorithmsTests */,
+				22CEECC21FE289560081359E /* LinuxMain.swift */,
+				22CEECBF1FE289560081359E /* SwiftAlgorithmsTests */,
 			);
 			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_20 /* SwiftAlgorithmsTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_21 /* SATest.swift */,
-			);
-			name = SwiftAlgorithmsTests;
-			path = Tests/SwiftAlgorithmsTests;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_22 /* Products */ = {
@@ -243,6 +251,9 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_30 /* Package.swift in Sources */,
+				22CEECC31FE289560081359E /* SATests.swift in Sources */,
+				22CEECC41FE289560081359E /* XCTestManifests.swift in Sources */,
+				22CEECC51FE289560081359E /* LinuxMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_36 /* SATest.swift in Sources */,
+				22CEECC71FE2897E0081359E /* Rational.swift in Sources */,
+				22CEECC61FE289790081359E /* SATests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
