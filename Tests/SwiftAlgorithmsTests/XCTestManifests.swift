@@ -13,6 +13,9 @@
 extension SATest {
 
     static var allTests = [
-        ("testExample", testExample)
+        ("testEquetable", testEquetable),
+        ("testPrint", testPrint),
+        ("testArithmetic", testArithmetic),
+        ("testComparation", testComparation)
     ]
 }

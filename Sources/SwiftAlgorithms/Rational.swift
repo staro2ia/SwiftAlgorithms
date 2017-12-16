@@ -10,7 +10,8 @@ import Foundation
 
 
 /// Рациональная дробь
-struct Rational<N: SignedInteger, D: UnsignedInteger> {
+struct Rational<N: SignedInteger, D: UnsignedInteger>: Comparable {
+
 //    var magnitude: N
     
 //    typealias Magnitude = N
@@ -125,31 +126,31 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
         let cd = gcd( left.denom, right.denom )
         return left.num * N(right.denom / cd ) < right.num * N(left.denom / cd)
     }
-    
-    static func > (left: Rational, right: Rational) -> Bool {
-        let cd = gcd( left.denom, right.denom )
-        return left.num * N(right.denom / cd ) > right.num * N(left.denom / cd)
-    }
+
+//    static func > (left: Rational, right: Rational) -> Bool {
+//        let cd = gcd( left.denom, right.denom )
+//        return left.num * N(right.denom / cd ) > right.num * N(left.denom / cd)
+//    }
     
     static func <= (left: Rational, right: Rational) -> Bool {
         let cd = gcd( left.denom, right.denom )
         return left.num * N(right.denom / cd ) <= right.num * N(left.denom / cd)
     }
     
-    static func >= (left: Rational, right: Rational) -> Bool {
-        let cd = gcd( left.denom, right.denom )
-        return left.num * N(right.denom / cd ) >= right.num * N(left.denom / cd)
-    }
+//    static func >= (left: Rational, right: Rational) -> Bool {
+//        let cd = gcd( left.denom, right.denom )
+//        return left.num * N(right.denom / cd ) >= right.num * N(left.denom / cd)
+//    }
     
     static func ==(lhs: Rational, rhs: Rational) -> Bool {
         let cd = gcd( lhs.denom, rhs.denom )
         return lhs.num * N(rhs.denom / cd) == rhs.num * N(lhs.denom / cd)
     }
     
-    static func !=(lhs: Rational, rhs: Rational) -> Bool {
-        let cd = gcd( lhs.denom, rhs.denom )
-        return lhs.num * N(rhs.denom / cd) != rhs.num * N(lhs.denom / cd)
-    }
+//    static func !=(lhs: Rational, rhs: Rational) -> Bool {
+//        let cd = gcd( lhs.denom, rhs.denom )
+//        return lhs.num * N(rhs.denom / cd) != rhs.num * N(lhs.denom / cd)
+//    }
     
     
     //MARK: Special
