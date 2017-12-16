@@ -17,14 +17,14 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
 //    typealias IntegerLiteralType = N
     
     
-    ///MARCK: Data section
+    //MARK: Data section
     
     /// Числитель дроби
     private var num: N
     /// Знаменатель дроби
     private var denom: D
     
-    ///MARCK: Init section
+    // MARK: Init section
     
     init() {
         num = 1
@@ -75,7 +75,7 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
         return self
     }
     
-    ///MARCK: Arithmetic operation section
+    //MARK: Arithmetic operation section
     
     static func + (left:  Rational, right: Rational ) -> Rational {
         let n = left.num * N(right.denom) + right.num * N(left.denom)
@@ -119,7 +119,7 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
         lhs = lhs / rhs
     }
     
-    ///MARCK: Сomparison operation section
+    //MARK: Сomparison operation section
     
     static func < (left: Rational, right: Rational) -> Bool {
         let cd = gcd( left.denom, right.denom )
@@ -152,12 +152,12 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
     }
     
     
-    ///MARCK: Special
+    //MARK: Special
 
     
 }
 
-/// MARK: - CustomStringConvertible
+// MARK: - CustomStringConvertible
 extension Rational : CustomStringConvertible {
     /// Текстовое представление Rational
     var description: String {
