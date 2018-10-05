@@ -21,6 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		225AD0B11FE5D6D10013FDD1 /* IOProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IOProtocols.swift */; };
+		225AD0B21FE5D6D10013FDD1 /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* InputStream.swift */; };
+		225AD0B31FE5D6D10013FDD1 /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* OutputStream.swift */; };
+		225AD0B41FE5D6D10013FDD1 /* FSM_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* FSM_Model.swift */; };
+		225AD0B51FE5D6D10013FDD1 /* lexema.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* lexema.swift */; };
+		225AD0B61FE5D6D10013FDD1 /* litera.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* litera.swift */; };
 		22920EE11FE5116100B9D24D /* FSMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22920EE01FE5116100B9D24D /* FSMTests.swift */; };
 		22A6F61C1FE2939C00DEE867 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Rational.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -257,6 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				225AD0B11FE5D6D10013FDD1 /* IOProtocols.swift in Sources */,
+				225AD0B21FE5D6D10013FDD1 /* InputStream.swift in Sources */,
+				225AD0B31FE5D6D10013FDD1 /* OutputStream.swift in Sources */,
+				225AD0B41FE5D6D10013FDD1 /* FSM_Model.swift in Sources */,
+				225AD0B51FE5D6D10013FDD1 /* lexema.swift in Sources */,
+				225AD0B61FE5D6D10013FDD1 /* litera.swift in Sources */,
 				22A6F61C1FE2939C00DEE867 /* Rational.swift in Sources */,
 				OBJ_37 /* SATests.swift in Sources */,
 				22920EE11FE5116100B9D24D /* FSMTests.swift in Sources */,

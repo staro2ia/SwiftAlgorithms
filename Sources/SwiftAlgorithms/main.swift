@@ -20,10 +20,9 @@ print("Hello, World!")
 //print(rel / rel2)
 
 
-//let testString = "Id"
-//let input = InputString(string:testString)
-//let fms = FSM_Model(input: input, output: OutputString() )
-//
-//
-//fms.start()
+let testString = "Id"
+let input = InputString(string:testString)
+let fms = FSM_Model(input: input, output: OutputString() )
+
+fms.start()
 
