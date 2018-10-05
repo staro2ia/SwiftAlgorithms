@@ -13,13 +13,9 @@ class OutputString: OutputProtocol {
     /// строка вывода потока.
     /// Хранит весь вывод, сделаный в поток.
     var data = String()
-    
-    
-    
+
     func putChar(char: Character) {
         data.append(char)
     }
 
-    
-    
 }

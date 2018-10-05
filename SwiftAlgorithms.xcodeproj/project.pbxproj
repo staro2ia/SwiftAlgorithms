@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"SwiftAlgorithms::SwiftAlgorithmsPackageTests::ProductTarget" /* SwiftAlgorithmsPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_54 /* Build configuration list for PBXAggregateTarget "SwiftAlgorithmsPackageTests" */;
+			buildConfigurationList = OBJ_56 /* Build configuration list for PBXAggregateTarget "SwiftAlgorithmsPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_57 /* PBXTargetDependency */,
+				OBJ_59 /* PBXTargetDependency */,
 			);
 			name = SwiftAlgorithmsPackageTests;
 			productName = SwiftAlgorithmsPackageTests;
@@ -21,31 +21,36 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		22CEECC31FE289560081359E /* SATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEECC01FE289560081359E /* SATests.swift */; };
-		22CEECC41FE289560081359E /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEECC11FE289560081359E /* XCTestManifests.swift */; };
-		22CEECC51FE289560081359E /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEECC21FE289560081359E /* LinuxMain.swift */; };
-		22CEECC61FE289790081359E /* SATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEECC01FE289560081359E /* SATests.swift */; };
-		22CEECC71FE2897E0081359E /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Rational.swift */; };
-		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_44 /* IOProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IOProtocols.swift */; };
-		OBJ_45 /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* InputStream.swift */; };
-		OBJ_46 /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* OutputStream.swift */; };
-		OBJ_47 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Rational.swift */; };
-		OBJ_48 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* main.swift */; };
-		OBJ_49 /* FSM_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* FSM_Model.swift */; };
-		OBJ_50 /* lexema.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* lexema.swift */; };
-		OBJ_51 /* litera.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* litera.swift */; };
+		225AD0B11FE5D6D10013FDD1 /* IOProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IOProtocols.swift */; };
+		225AD0B21FE5D6D10013FDD1 /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* InputStream.swift */; };
+		225AD0B31FE5D6D10013FDD1 /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* OutputStream.swift */; };
+		225AD0B41FE5D6D10013FDD1 /* FSM_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* FSM_Model.swift */; };
+		225AD0B51FE5D6D10013FDD1 /* lexema.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* lexema.swift */; };
+		225AD0B61FE5D6D10013FDD1 /* litera.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* litera.swift */; };
+		22920EE11FE5116100B9D24D /* FSMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22920EE01FE5116100B9D24D /* FSMTests.swift */; };
+		22A6F61C1FE2939C00DEE867 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Rational.swift */; };
+		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_37 /* SATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* SATests.swift */; };
+		OBJ_38 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* XCTestManifests.swift */; };
+		OBJ_46 /* IOProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IOProtocols.swift */; };
+		OBJ_47 /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* InputStream.swift */; };
+		OBJ_48 /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* OutputStream.swift */; };
+		OBJ_49 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Rational.swift */; };
+		OBJ_50 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* main.swift */; };
+		OBJ_51 /* FSM_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* FSM_Model.swift */; };
+		OBJ_52 /* lexema.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* lexema.swift */; };
+		OBJ_53 /* litera.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* litera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		220374911FDFF793003DAC32 /* PBXContainerItemProxy */ = {
+		22A6F61A1FE2936000DEE867 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftAlgorithms::SwiftAlgorithms";
 			remoteInfo = SwiftAlgorithms;
 		};
-		220374921FDFF795003DAC32 /* PBXContainerItemProxy */ = {
+		22A6F61B1FE2936000DEE867 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -55,9 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22CEECC01FE289560081359E /* SATests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATests.swift; sourceTree = "<group>"; };
-		22CEECC11FE289560081359E /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		22CEECC21FE289560081359E /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinuxMain.swift; path = Tests/LinuxMain.swift; sourceTree = "<group>"; };
+		22920EE01FE5116100B9D24D /* FSMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* IOProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOProtocols.swift; sourceTree = "<group>"; };
 		OBJ_11 /* InputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStream.swift; sourceTree = "<group>"; };
 		OBJ_12 /* OutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
@@ -66,20 +69,22 @@
 		OBJ_16 /* FSM_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSM_Model.swift; sourceTree = "<group>"; };
 		OBJ_17 /* lexema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lexema.swift; sourceTree = "<group>"; };
 		OBJ_18 /* litera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = litera.swift; sourceTree = "<group>"; };
+		OBJ_21 /* SATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATests.swift; sourceTree = "<group>"; };
+		OBJ_22 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		"SwiftAlgorithms::SwiftAlgorithms::Product" /* SwiftAlgorithms */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SwiftAlgorithms::SwiftAlgorithmsTests::Product" /* SwiftAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftAlgorithms::SwiftAlgorithms::Product" /* SwiftAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SwiftAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftAlgorithms::SwiftAlgorithmsTests::Product" /* SwiftAlgorithmsTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_37 /* Frameworks */ = {
+		OBJ_39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_52 /* Frameworks */ = {
+		OBJ_54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -89,16 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22CEECBF1FE289560081359E /* SwiftAlgorithmsTests */ = {
-			isa = PBXGroup;
-			children = (
-				22CEECC01FE289560081359E /* SATests.swift */,
-				22CEECC11FE289560081359E /* XCTestManifests.swift */,
-			);
-			name = SwiftAlgorithmsTests;
-			path = Tests/SwiftAlgorithmsTests;
-			sourceTree = "<group>";
-		};
 		OBJ_15 /* Конечный автомат */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,19 +101,29 @@
 				OBJ_17 /* lexema.swift */,
 				OBJ_18 /* litera.swift */,
 			);
-			path = "Конечный автомат";
+			path = "Конечный автомат";
 			sourceTree = "<group>";
 		};
 		OBJ_19 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				22CEECC21FE289560081359E /* LinuxMain.swift */,
-				22CEECBF1FE289560081359E /* SwiftAlgorithmsTests */,
+				OBJ_20 /* SwiftAlgorithmsTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_22 /* Products */ = {
+		OBJ_20 /* SwiftAlgorithmsTests */ = {
+			isa = PBXGroup;
+			children = (
+				22920EE01FE5116100B9D24D /* FSMTests.swift */,
+				OBJ_21 /* SATests.swift */,
+				OBJ_22 /* XCTestManifests.swift */,
+			);
+			name = SwiftAlgorithmsTests;
+			path = Tests/SwiftAlgorithmsTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"SwiftAlgorithms::SwiftAlgorithmsTests::Product" /* SwiftAlgorithmsTests.xctest */,
@@ -133,7 +138,7 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_19 /* Tests */,
-				OBJ_22 /* Products */,
+				OBJ_23 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,10 +177,10 @@
 /* Begin PBXNativeTarget section */
 		"SwiftAlgorithms::SwiftAlgorithms" /* SwiftAlgorithms */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_40 /* Build configuration list for PBXNativeTarget "SwiftAlgorithms" */;
+			buildConfigurationList = OBJ_42 /* Build configuration list for PBXNativeTarget "SwiftAlgorithms" */;
 			buildPhases = (
-				OBJ_43 /* Sources */,
-				OBJ_52 /* Frameworks */,
+				OBJ_45 /* Sources */,
+				OBJ_54 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,15 +193,15 @@
 		};
 		"SwiftAlgorithms::SwiftAlgorithmsTests" /* SwiftAlgorithmsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_32 /* Build configuration list for PBXNativeTarget "SwiftAlgorithmsTests" */;
+			buildConfigurationList = OBJ_33 /* Build configuration list for PBXNativeTarget "SwiftAlgorithmsTests" */;
 			buildPhases = (
-				OBJ_35 /* Sources */,
-				OBJ_37 /* Frameworks */,
+				OBJ_36 /* Sources */,
+				OBJ_39 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_38 /* PBXTargetDependency */,
+				OBJ_40 /* PBXTargetDependency */,
 			);
 			name = SwiftAlgorithmsTests;
 			productName = SwiftAlgorithmsTests;
@@ -205,9 +210,9 @@
 		};
 		"SwiftAlgorithms::SwiftPMPackageDescription" /* SwiftAlgorithmsPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_26 /* Build configuration list for PBXNativeTarget "SwiftAlgorithmsPackageDescription" */;
+			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "SwiftAlgorithmsPackageDescription" */;
 			buildPhases = (
-				OBJ_29 /* Sources */,
+				OBJ_30 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -233,7 +238,7 @@
 				en,
 			);
 			mainGroup = OBJ_5;
-			productRefGroup = OBJ_22 /* Products */;
+			productRefGroup = OBJ_23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -246,58 +251,63 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_29 /* Sources */ = {
+		OBJ_30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_30 /* Package.swift in Sources */,
-				22CEECC31FE289560081359E /* SATests.swift in Sources */,
-				22CEECC41FE289560081359E /* XCTestManifests.swift in Sources */,
-				22CEECC51FE289560081359E /* LinuxMain.swift in Sources */,
+				OBJ_31 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_35 /* Sources */ = {
+		OBJ_36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				22CEECC71FE2897E0081359E /* Rational.swift in Sources */,
-				22CEECC61FE289790081359E /* SATests.swift in Sources */,
+				225AD0B11FE5D6D10013FDD1 /* IOProtocols.swift in Sources */,
+				225AD0B21FE5D6D10013FDD1 /* InputStream.swift in Sources */,
+				225AD0B31FE5D6D10013FDD1 /* OutputStream.swift in Sources */,
+				225AD0B41FE5D6D10013FDD1 /* FSM_Model.swift in Sources */,
+				225AD0B51FE5D6D10013FDD1 /* lexema.swift in Sources */,
+				225AD0B61FE5D6D10013FDD1 /* litera.swift in Sources */,
+				22A6F61C1FE2939C00DEE867 /* Rational.swift in Sources */,
+				OBJ_37 /* SATests.swift in Sources */,
+				22920EE11FE5116100B9D24D /* FSMTests.swift in Sources */,
+				OBJ_38 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_43 /* Sources */ = {
+		OBJ_45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_44 /* IOProtocols.swift in Sources */,
-				OBJ_45 /* InputStream.swift in Sources */,
-				OBJ_46 /* OutputStream.swift in Sources */,
-				OBJ_47 /* Rational.swift in Sources */,
-				OBJ_48 /* main.swift in Sources */,
-				OBJ_49 /* FSM_Model.swift in Sources */,
-				OBJ_50 /* lexema.swift in Sources */,
-				OBJ_51 /* litera.swift in Sources */,
+				OBJ_46 /* IOProtocols.swift in Sources */,
+				OBJ_47 /* InputStream.swift in Sources */,
+				OBJ_48 /* OutputStream.swift in Sources */,
+				OBJ_49 /* Rational.swift in Sources */,
+				OBJ_50 /* main.swift in Sources */,
+				OBJ_51 /* FSM_Model.swift in Sources */,
+				OBJ_52 /* lexema.swift in Sources */,
+				OBJ_53 /* litera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_38 /* PBXTargetDependency */ = {
+		OBJ_40 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftAlgorithms::SwiftAlgorithms" /* SwiftAlgorithms */;
-			targetProxy = 220374911FDFF793003DAC32 /* PBXContainerItemProxy */;
+			targetProxy = 22A6F61A1FE2936000DEE867 /* PBXContainerItemProxy */;
 		};
-		OBJ_57 /* PBXTargetDependency */ = {
+		OBJ_59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftAlgorithms::SwiftAlgorithmsTests" /* SwiftAlgorithmsTests */;
-			targetProxy = 220374921FDFF795003DAC32 /* PBXContainerItemProxy */;
+			targetProxy = 22A6F61B1FE2936000DEE867 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_27 /* Debug */ = {
+		OBJ_28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -306,7 +316,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_28 /* Release */ = {
+		OBJ_29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -324,26 +334,23 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = "";
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		OBJ_33 /* Debug */ = {
+		OBJ_34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -358,7 +365,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_34 /* Release */ = {
+		OBJ_35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -389,17 +396,17 @@
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = "";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		OBJ_41 /* Debug */ = {
+		OBJ_43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -416,7 +423,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_42 /* Release */ = {
+		OBJ_44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -435,13 +442,13 @@
 			};
 			name = Release;
 		};
-		OBJ_55 /* Debug */ = {
+		OBJ_57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_56 /* Release */ = {
+		OBJ_58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
@@ -459,38 +466,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_26 /* Build configuration list for PBXNativeTarget "SwiftAlgorithmsPackageDescription" */ = {
+		OBJ_27 /* Build configuration list for PBXNativeTarget "SwiftAlgorithmsPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_27 /* Debug */,
-				OBJ_28 /* Release */,
+				OBJ_28 /* Debug */,
+				OBJ_29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_32 /* Build configuration list for PBXNativeTarget "SwiftAlgorithmsTests" */ = {
+		OBJ_33 /* Build configuration list for PBXNativeTarget "SwiftAlgorithmsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_33 /* Debug */,
-				OBJ_34 /* Release */,
+				OBJ_34 /* Debug */,
+				OBJ_35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_40 /* Build configuration list for PBXNativeTarget "SwiftAlgorithms" */ = {
+		OBJ_42 /* Build configuration list for PBXNativeTarget "SwiftAlgorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_41 /* Debug */,
-				OBJ_42 /* Release */,
+				OBJ_43 /* Debug */,
+				OBJ_44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_54 /* Build configuration list for PBXAggregateTarget "SwiftAlgorithmsPackageTests" */ = {
+		OBJ_56 /* Build configuration list for PBXAggregateTarget "SwiftAlgorithmsPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_55 /* Debug */,
-				OBJ_56 /* Release */,
+				OBJ_57 /* Debug */,
+				OBJ_58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -10,21 +10,22 @@ import Foundation
 
 
 /// Рациональная дробь
-struct Rational<N: SignedInteger, D: UnsignedInteger> {
+struct Rational<N: SignedInteger, D: UnsignedInteger>: Comparable {
+
 //    var magnitude: N
     
 //    typealias Magnitude = N
 //    typealias IntegerLiteralType = N
     
     
-    ///MARCK: Data section
+    //MARK: Data section
     
     /// Числитель дроби
     private var num: N
     /// Знаменатель дроби
     private var denom: D
     
-    ///MARCK: Init section
+    // MARK: Init section
     
     init() {
         num = 1
@@ -75,7 +76,7 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
         return self
     }
     
-    ///MARCK: Arithmetic operation section
+    //MARK: Arithmetic operation section
     
     static func + (left:  Rational, right: Rational ) -> Rational {
         let n = left.num * N(right.denom) + right.num * N(left.denom)
@@ -119,45 +120,45 @@ struct Rational<N: SignedInteger, D: UnsignedInteger> {
         lhs = lhs / rhs
     }
     
-    ///MARCK: Сomparison operation section
+    //MARK: Сomparison operation section
     
     static func < (left: Rational, right: Rational) -> Bool {
         let cd = gcd( left.denom, right.denom )
         return left.num * N(right.denom / cd ) < right.num * N(left.denom / cd)
     }
-    
-    static func > (left: Rational, right: Rational) -> Bool {
-        let cd = gcd( left.denom, right.denom )
-        return left.num * N(right.denom / cd ) > right.num * N(left.denom / cd)
-    }
+
+//    static func > (left: Rational, right: Rational) -> Bool {
+//        let cd = gcd( left.denom, right.denom )
+//        return left.num * N(right.denom / cd ) > right.num * N(left.denom / cd)
+//    }
     
     static func <= (left: Rational, right: Rational) -> Bool {
         let cd = gcd( left.denom, right.denom )
         return left.num * N(right.denom / cd ) <= right.num * N(left.denom / cd)
     }
     
-    static func >= (left: Rational, right: Rational) -> Bool {
-        let cd = gcd( left.denom, right.denom )
-        return left.num * N(right.denom / cd ) >= right.num * N(left.denom / cd)
-    }
+//    static func >= (left: Rational, right: Rational) -> Bool {
+//        let cd = gcd( left.denom, right.denom )
+//        return left.num * N(right.denom / cd ) >= right.num * N(left.denom / cd)
+//    }
     
     static func ==(lhs: Rational, rhs: Rational) -> Bool {
         let cd = gcd( lhs.denom, rhs.denom )
         return lhs.num * N(rhs.denom / cd) == rhs.num * N(lhs.denom / cd)
     }
     
-    static func !=(lhs: Rational, rhs: Rational) -> Bool {
-        let cd = gcd( lhs.denom, rhs.denom )
-        return lhs.num * N(rhs.denom / cd) != rhs.num * N(lhs.denom / cd)
-    }
+//    static func !=(lhs: Rational, rhs: Rational) -> Bool {
+//        let cd = gcd( lhs.denom, rhs.denom )
+//        return lhs.num * N(rhs.denom / cd) != rhs.num * N(lhs.denom / cd)
+//    }
     
     
-    ///MARCK: Special
+    //MARK: Special
 
     
 }
 
-/// MARK: - CustomStringConvertible
+// MARK: - CustomStringConvertible
 extension Rational : CustomStringConvertible {
     /// Текстовое представление Rational
     var description: String {
