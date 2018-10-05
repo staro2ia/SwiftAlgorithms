@@ -10,7 +10,7 @@ import Foundation
 
 /// Конечный автомат
 class FSM_Model {
-    ///MARK: Types
+    //MARK: Types
     
     /// Состояния автомата.
     ///
@@ -25,7 +25,7 @@ class FSM_Model {
         case error
     }
     
-    ///MARK: Fields
+    //MARK: Fields
     
     /// Состояние автомата
     var state = StateType.S0
@@ -38,7 +38,7 @@ class FSM_Model {
         output = outp
     }
 
-    ///MARK: Methods
+    //MARK: Methods
     
     func start() {
         while true {
