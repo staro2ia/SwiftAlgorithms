@@ -1,3 +1,3 @@
 # SwiftAlgorithms
 
-A description of this package.
+Изучение алгоритмов с реализацией на Свифте.
