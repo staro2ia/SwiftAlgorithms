@@ -31,6 +31,8 @@
 		22920EE11FE5116100B9D24D /* FSMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22920EE01FE5116100B9D24D /* FSMTests.swift */; };
 		22A6F61C1FE2939C00DEE867 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Rational.swift */; };
 		22B9EB77216A22D5006EB11E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EB75216A22D5006EB11E /* Parser.swift */; };
+		E9ED07F0216B02AC009B75C2 /* parsertree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ED07EE216B01CA009B75C2 /* parsertree.swift */; };
+		E9ED07F1216B02BC009B75C2 /* parsertree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ED07EE216B01CA009B75C2 /* parsertree.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_37 /* SATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* SATests.swift */; };
 		OBJ_38 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* XCTestManifests.swift */; };
@@ -64,6 +66,7 @@
 /* Begin PBXFileReference section */
 		22920EE01FE5116100B9D24D /* FSMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMTests.swift; sourceTree = "<group>"; };
 		22B9EB75216A22D5006EB11E /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		E9ED07EE216B01CA009B75C2 /* parsertree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parsertree.swift; sourceTree = "<group>"; };
 		OBJ_10 /* IOProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOProtocols.swift; sourceTree = "<group>"; };
 		OBJ_11 /* InputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStream.swift; sourceTree = "<group>"; };
 		OBJ_12 /* OutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				22B9EB75216A22D5006EB11E /* Parser.swift */,
+				E9ED07EE216B01CA009B75C2 /* parsertree.swift */,
 			);
 			path = "комбинатор синтаксического анализа";
 			sourceTree = "<group>";
@@ -245,6 +249,9 @@
 					"SwiftAlgorithms::SwiftAlgorithmsPackageTests::ProductTarget" = {
 						LastSwiftMigration = 1000;
 					};
+					"SwiftAlgorithms::SwiftPMPackageDescription" = {
+						LastSwiftMigration = 1000;
+					};
 				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftAlgorithms" */;
@@ -280,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				E9ED07F0216B02AC009B75C2 /* parsertree.swift in Sources */,
 				225AD0B11FE5D6D10013FDD1 /* IOProtocols.swift in Sources */,
 				22B9EB77216A22D5006EB11E /* Parser.swift in Sources */,
 				225AD0B21FE5D6D10013FDD1 /* InputStream.swift in Sources */,
@@ -298,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				E9ED07F1216B02BC009B75C2 /* parsertree.swift in Sources */,
 				22236F62216AC1BA009F8F96 /* Parser.swift in Sources */,
 				OBJ_46 /* IOProtocols.swift in Sources */,
 				OBJ_47 /* InputStream.swift in Sources */,
@@ -331,7 +340,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -340,7 +349,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

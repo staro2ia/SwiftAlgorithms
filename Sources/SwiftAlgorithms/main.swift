@@ -26,7 +26,7 @@ print("Hello, World!")
 //
 //fms.start()
 
-let s = parser(string: "Test string")
+let s = symbol(string: "TesT sTring T")
 
 print(s.isEmpty)
 print(s)
